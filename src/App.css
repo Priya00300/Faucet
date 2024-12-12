@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Starry background */
+  color: rgb(248, 248, 248);
+}
+
+/* Card Container */
+.card {
+  background: rgb(60, 18, 94);
+  color: black;
+  width: 400px;
+  border-radius: 100px;
+  border-color: azure;
+  border-width: 10px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds margin between elements inside the card */
+}
+
+/* Heading */
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.card input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.card button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: darkviolet;
+}
+
+/* Request Airdrop Button */
+.card .airdrop-button {
+  margin-top: 20px;
+}
+
+/* Wallet Buttons (Inside the Card) */
+.wallet-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wallet-buttons .connect,
+.wallet-buttons .disconnect {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px auto; /* Centers the buttons */
+}
+
+.wallet-buttons .connect {
+  background-color: purple;
+}
+
+.wallet-buttons .connect:hover {
+  background-color: darkviolet;
+}
+
+.wallet-buttons .disconnect {
+  background-color: darkgray;
+}
+
+.wallet-buttons .disconnect:hover {
+  background-color: gray;
+}
